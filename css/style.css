@@ -22,6 +22,11 @@ body{
     color: #FF6347
 }
 
+a:hover{
+  font-weight: bolder;
+  box-shadow: 0 30px 15px rgba(0, 0, 0, 0.2);
+}
+
 footer{
   font-family: "Playfair Display", serif;
   font-style: normal;
