@@ -15,10 +15,11 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    background-color: #FFF3E0
 }
 .navBar a{
     text-decoration: none;
-    color: black;
+    color: #FF6347
 }
 
 footer{
