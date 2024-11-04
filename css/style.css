@@ -1,14 +1,41 @@
+* ⁠{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 h2 h3 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+body{
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.navBar a{
+    text-decoration: none;
+    color: black;
+}
+
 footer{
   font-family: "Playfair Display", serif;
   font-style: normal;
 }
 
-h1 h2 h3 h4 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
 
-body{
-  font-family: "Lato", sans-serif;
-  font-style: normal;
+.navLi{
+    list-style-type: none;
+    margin: 0 50px;
+}
+.navUl{
+    display: flex;
+
+}
+.search-button{
+    border: none; 
+    background: none;
 }
