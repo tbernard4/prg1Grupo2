@@ -104,3 +104,51 @@ footer{
   background-color: #FFF3E0;
 
 }
+
+.formulario{
+  border: 2px solid #CCC;
+  padding: 20px;
+  background-color: #F9F9F9;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.iniciarSesion {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 60, 60, 0.16);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+ }
+ 
+ 
+ .iniciarSesion:hover {
+  background-color: rgba(255, 60, 60, 0.735);
+  font-weight: bolder;
+ 
+ 
+ }
+ .registrarse {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 60, 60, 0.16);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+ }
+ 
+ 
+ .registrarse:hover {
+  background-color: rgba(255, 60, 60, 0.735);
+  font-weight: bolder;
+ 
+ 
+ }
+ 
