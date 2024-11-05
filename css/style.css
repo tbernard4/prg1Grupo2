@@ -15,16 +15,24 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: #FFF3E0
+    background-color: #FFF3E0;
 }
 .navBar a{
     text-decoration: none;
-    color: #FF6347
+    color: #ff5133;
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 a:hover{
   font-weight: bolder;
-  box-shadow: 0 30px 15px rgba(0, 0, 0, 0.2);
+  border: solid 2px rgba(255, 60, 60, 0.2);
+  background-color: rgba(255, 60, 60, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.2);
+
 }
 
 footer{
@@ -32,10 +40,9 @@ footer{
   font-style: normal;
 }
 
-
 .navLi{
     list-style-type: none;
-    margin: 0 50px;
+    margin: 0 60px;
 }
 .navUl{
     display: flex;
@@ -44,4 +51,35 @@ footer{
 .search-button{
     border: none; 
     background: none;
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.inputBuscador{
+  border-radius: 8px;
+  border: solid 2px #ff5133;;
+  padding: 4px;
+  width: 160px;
+  margin-top: 10px;
+
+}
+.search-button:hover{
+  font-weight: bolder;
+  border: solid 2px rgba(255, 60, 60, 0.2);
+  background-color: rgba(255, 60, 60, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.2);
+
+}
+.nombres{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35%;
+  color: #ff5133;
+}
+.footer{
+  background-color: #FFF3E0;
+
 }
