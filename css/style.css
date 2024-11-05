@@ -38,6 +38,9 @@ a:hover{
 footer{
   font-family: "Playfair Display", serif;
   font-style: normal;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
 }
 
 .navLi{
@@ -56,14 +59,21 @@ footer{
     border-radius: 10px;
 
 }
+
 .inputBuscador{
   border-radius: 8px;
   border: solid 2px #ff5133;;
-  padding: 4px;
+  padding: 8px;
   width: 160px;
   margin-top: 10px;
 
 }
+
+.inputBuscador:focus {
+  border-color: #FF4500;
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+}
+
 .search-button:hover{
   font-weight: bolder;
   border: solid 2px rgba(255, 60, 60, 0.2);
@@ -79,6 +89,17 @@ footer{
   margin: 0 35%;
   color: #ff5133;
 }
+
+.hover-image{
+  display: none;
+  width: 30px;
+}
+
+
+.nombre:hover .hover-image {
+  display: block;
+}
+
 .footer{
   background-color: #FFF3E0;
 
