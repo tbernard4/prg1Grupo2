@@ -37,6 +37,12 @@ a:hover{
 
 }
 
+.logo{
+  height: 110px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
 footer{
   font-family: "Playfair Display", serif;
   font-style: normal;

@@ -5,3 +5,4 @@ fetch("https://dummyjson.com/recipes")
   .catch(function (error) {
     console.log("error: ", error);
   });
+  
