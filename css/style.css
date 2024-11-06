@@ -16,15 +16,19 @@ body{
 
 .header{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #FFF3E0;
+    height: 100px;
 }
+
 .navBar a{
     text-decoration: none;
     color: #ff5133;
     border: 2px solid transparent;
     padding: 5px;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 a:hover{
@@ -38,7 +42,7 @@ a:hover{
 }
 
 .logo{
-  height: 110px;
+  height: 90px;
   border-radius: 50%;
   margin: 15px;
 }
@@ -108,6 +112,10 @@ footer{
   display: block;
 }
 
+.nombre:hover{
+  font-weight: bold;
+}
+
 .footer{
   background-color: #FFF3E0;
 
@@ -160,3 +168,29 @@ footer{
  
  }
  
+ /* FETCH */
+ .recipes-list{
+  border: 2px solid black;
+  margin-top: 30px;
+
+ }
+
+ .articles-recetas {
+  width: 50%;
+  border: dotted;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+ }
+
+ .articles-recetas img{
+  width: 80%;
+  border-radius: 50%;
+ }
+
+.articles-recetas p{
+  font-size: 20px;
+}
