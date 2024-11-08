@@ -63,6 +63,20 @@ footer{
     display: flex;
 
 }
+
+.inputBuscador:focus {
+  border-color: #FF4500;
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+}
+.inputBuscador{
+  border-radius: 8px;
+  border: solid 2px #ff5133;;
+  padding: 8px;
+  width: 160px;
+  margin-top: 10px;
+  
+}
+
 .search-button{
     border: none; 
     background: none;
@@ -70,20 +84,6 @@ footer{
     padding: 5px;
     border-radius: 10px;
 
-}
-
-.inputBuscador{
-  border-radius: 8px;
-  border: solid 2px #ff5133;;
-  padding: 8px;
-  width: 160px;
-  margin-top: 10px;
-
-}
-
-.inputBuscador:focus {
-  border-color: #FF4500;
-  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
 }
 
 .search-button:hover{
@@ -95,13 +95,6 @@ footer{
   box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.2);
 
 }
-.nombres{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 35%;
-  color: #ff5133;
-}
-
 .hover-image{
   display: none;
   width: 30px;
@@ -116,22 +109,48 @@ footer{
   font-weight: bold;
 }
 
+
+.input{
+  max-width: 95%;
+}
+.nombres{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35%;
+  color: #ff5133;
+}
 .footer{
   background-color: #FFF3E0;
-
 }
-
-.formulario{
-  border: 2px solid #CCC;
+.formulario {
+  border: 2px solid #ccc;
   padding: 20px;
-  background-color: #F9F9F9;
-  width: 300px;
-  height: 150px;
+  width: 320px;
+  background-color: rgba(255, 60, 60, 0.2);
   margin: auto;
   border-radius: 10px;
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.507);
 }
 
-.iniciarSesion {
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.checkbox {
+  margin-right: 5px;
+}
+
+
+.iniciarSesion, .crearCuenta, .registrarse{
   display: block;
   width: 100%;
   padding: 10px;
@@ -140,33 +159,13 @@ footer{
   border: none;
   border-radius: 8px;
   text-align: center;
- }
- 
- 
- .iniciarSesion:hover {
+}
+
+.iniciarSesion:hover, .crearCuenta:hover, .registrarse:hover {
   background-color: rgba(255, 60, 60, 0.735);
   font-weight: bolder;
- 
- 
- }
- .registrarse {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(255, 60, 60, 0.16);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  text-align: center;
- }
- 
- 
- .registrarse:hover {
-  background-color: rgba(255, 60, 60, 0.735);
-  font-weight: bolder;
- 
- 
- }
+
+}
  
  /* FETCH */
  .recipes-list{
