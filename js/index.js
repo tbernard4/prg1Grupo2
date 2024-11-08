@@ -16,7 +16,7 @@ fetch("https://dummyjson.com/recipes")
               <article class="articles-recetas">
                      <img src= ${recetas[i].image} alt=''>
                       <h2>Name: ${recetas[i].name} </h2>
-                      <p>Instructions: ${recetas[i].instructions} </p>
+                      <p>Difficulty: ${recetas[i].difficulty} </p>
                </article>
            `;
   }

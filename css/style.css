@@ -191,6 +191,10 @@ footer{
   border-radius: 50%;
  }
 
+ .articles-recetas img:hover{
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+ }
+
 .articles-recetas p{
   font-size: 20px;
 }
