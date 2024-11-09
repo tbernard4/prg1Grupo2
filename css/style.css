@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 
 }
 h1 h2 h3 h4 {
@@ -11,7 +12,8 @@ h1 h2 h3 h4 {
 body{
   font-family: "Lato", sans-serif;
   font-style: normal;
-  background-image: url(../images/Free\ Photo\ |\ Soft\ concrete\ texture.jpg);
+  background-image: url(https://image.freepik.com/foto-gratis/detalle-textura-tela-color-marron-claro-fondo_1373-1249.jpg);
+  
 }
 
 .header{
@@ -20,6 +22,10 @@ body{
     justify-content: space-between;
     background-color: #FFF3E0;
     height: 100px;
+    margin-top: -0.5%;
+    margin-right: -0,5%;
+    margin-left: -0.5%;
+   
 }
 
 .navBar a{
@@ -29,6 +35,7 @@ body{
     padding: 5px;
     border-radius: 10px;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 a:hover{
@@ -53,6 +60,7 @@ footer{
   text-align: center;
   padding: 10px;
   bottom: 0;
+  background-color: #FFF3E0;
 }
 
 .navLi{
@@ -119,10 +127,12 @@ footer{
   margin: 0 35%;
   color: #ff5133;
 }
-.footer{
-  background-color: #FFF3E0;
-}
+
 .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #ccc;
   padding: 20px;
   width: 320px;
@@ -130,6 +140,7 @@ footer{
   margin: auto;
   border-radius: 10px;
   box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.507);
+
 }
 
 .input {
@@ -183,6 +194,7 @@ footer{
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  border-color:  rgba(255, 60, 60, 0);
  }
 
  .articles-recetas img{
@@ -196,4 +208,8 @@ footer{
 
 .articles-recetas p{
   font-size: 20px;
+}
+.bodyRegisterLogin{
+  height: 100%;
+  margin: 0;
 }
