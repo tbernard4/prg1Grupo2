@@ -186,7 +186,7 @@ footer{
  }
 
  .articles-recetas {
-  width: 50%;
+  width: 40%;
   border: dotted;
   display: flex;
   flex-direction: column;
