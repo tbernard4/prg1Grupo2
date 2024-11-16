@@ -42,11 +42,17 @@
         </div>
     </header>
 
-    <form action="./index.html" method="get" class="formulario">
+    <form action="./index.html" method="get" class="formulario" id="formularioRegister">
 
-        <input placeholder="Mail" type="text" class="input" name="username" required><br><br>
-        <input placeholder="Contraseña" type="password" class="input" name="password" id="password" required><br><br>
+        <input placeholder="Mail" type="text" class="input" name="username" id="registerMail"><br><br>
+        <div class="errorRegisterMail">
+            Por favor complete el campo*
+        </div>
+        <input placeholder="Contraseña" type="password" class="input" name="password" id="registerContraseña"><br><br>
+        <div class="errorRegisterContraseña">
+            Por favor complete el campo*
 
+        </div>
         <button class="iniciarSesion" type="submit" class="iniciarSesion">Registrarme</button>
     </form>
  

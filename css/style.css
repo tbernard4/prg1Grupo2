@@ -215,3 +215,8 @@ footer{
   height: 100%;
   margin: 0;
 }
+
+.errorRegisterMail, .errorRegisterContraseña {
+  display: none;
+  color: red;
+}
