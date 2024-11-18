@@ -23,13 +23,16 @@ fetch("https://dummyjson.com/recipes")
                </article>
            `;
     }
+    recipesList.innerHTML = recipes;
+
 
     let cargarMasBoton = document.querySelector(".cargarMasBoton")
-    let cargarMas = 11
+    let cargarMas = 10
+
     cargarMasBoton.addEventListener("click", function () {
-      cargarMas += 10
+    let nuevasRecetas = ""
       for (let i = cargarMas; i < (cargarMas + 10); i++) {
-        recipes += `
+        nuevasRecetas += `
                         <article class="articles-recetas">
                                <img src= ${recetas[i].image} alt=''>
                                 <h2>Name: ${recetas[i].name} </h2>
@@ -37,10 +40,12 @@ fetch("https://dummyjson.com/recipes")
                          </article>
                      `;
       }
-    })
-    recipesList.innerHTML = recipes
-  })
-  .catch(function (error) {
+    cargarMas += 10
+    recipesList.innerHTML += nuevasRecetas
+    });
+
+})
+.catch(function (error) {
     console.log("error: ", error);
-  });
+})
 
