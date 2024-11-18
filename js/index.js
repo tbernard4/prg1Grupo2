@@ -3,26 +3,44 @@ fetch("https://dummyjson.com/recipes")
     return response.json();
   })
 
-.then(function (data) {
-  let recetas = data.recipes;
-  let recipes = "";
-  let recipesList = document.querySelector(".recipes-list");  
-  recipesList.style.display = "flex"
-  recipesList.style.flexWrap = "wrap"
-  recipesList.style.justifyContent = "space-evenly"   
-   
-  for (let i = 0; i < 10; i++) {
-    recipes += `
+  .then(function (data) {
+    let recetas = data.recipes;
+    let recipes = "";
+    let recipesList = document.querySelector(".recipes-list");
+
+
+
+    recipesList.style.display = "flex"
+    recipesList.style.flexWrap = "wrap"
+    recipesList.style.justifyContent = "space-evenly"
+
+    for (let i = 0; i < 10; i++) {
+      recipes += `
               <article class="articles-recetas">
                      <img src= ${recetas[i].image} alt=''>
                       <h2>Name: ${recetas[i].name} </h2>
                       <p>Difficulty: ${recetas[i].difficulty} </p>
                </article>
            `;
-  }
-  console.log(recipes);
-  recipesList.innerHTML = recipes
-})
+    }
+
+    let cargarMasBoton = document.querySelector(".cargarMasBoton")
+    let cargarMas = 11
+    cargarMasBoton.addEventListener("click", function () {
+      cargarMas += 10
+      for (let i = cargarMas; i < (cargarMas + 10); i++) {
+        recipes += `
+                        <article class="articles-recetas">
+                               <img src= ${recetas[i].image} alt=''>
+                                <h2>Name: ${recetas[i].name} </h2>
+                                <p>Difficulty: ${recetas[i].difficulty} </p>
+                         </article>
+                     `;
+      }
+    })
+    recipesList.innerHTML = recipes
+  })
   .catch(function (error) {
     console.log("error: ", error);
   });
+
