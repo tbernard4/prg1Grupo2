@@ -228,3 +228,26 @@ footer{
 .noTengoCuenta:hover{
   text-decoration: underline;
 }
+
+.cargarMasDiv{
+  display: flex;
+  justify-content: center;
+
+}
+
+.cargarMasBoton{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #e07a5f;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cargarMasBoton:hover {
+  background-color: #d65a3b;
+  box-shadow: 0 8px 16px rgba(214, 90, 59, 0.8);
+}
