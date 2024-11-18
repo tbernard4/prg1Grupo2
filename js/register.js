@@ -1,6 +1,3 @@
-
-
-
 let formulario = document.querySelector("#formularioRegister")
 let email = document.querySelector("#registerMail")
 let contraseña = document.querySelector("#registerContraseña")
