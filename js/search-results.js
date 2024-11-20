@@ -2,7 +2,7 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let resultadoBuscador = queryStringObj.get("buscador");
 
-let url = `https://dummyjson.com/recipes/search?name=${resultadoBuscador}`
+let url = `https://dummyjson.com/recipes/search?q=${resultadoBuscador}`
 let recetaBuscada = document.querySelector(".search-results")
 if (resultadoBuscador) {
 
