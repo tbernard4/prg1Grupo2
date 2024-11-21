@@ -251,3 +251,30 @@ footer{
   background-color: #d65a3b;
   box-shadow: 0 8px 16px rgba(214, 90, 59, 0.8);
 }
+
+@media (min-width: 500px){
+
+  .articles-recetas{
+    width: 30%;
+  } 
+  .navBar{
+    width: 30%;
+  }
+  .formBuscador{
+    display: none;
+  }
+
+  .logo {
+    margin:0px ;
+    width: 0%;
+  }
+  .navUl{
+    width: 30%;
+  }
+  .header{
+    width: 30%;
+  }
+
+  
+ 
+}
