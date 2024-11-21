@@ -14,12 +14,13 @@ fetch("https://dummyjson.com/recipes")
     recipesList.style.flexWrap = "wrap"
     recipesList.style.justifyContent = "space-evenly"
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i <= 10; i++) {
       recipes += `
               <article class="articles-recetas">
                      <img src= ${recetas[i].image} alt=''>
                       <h2>Name: ${recetas[i].name} </h2>
                       <p>Difficulty: ${recetas[i].difficulty} </p>
+                      <a href="./receta.html?id=${[i]}" class="verMasA">Ver mas</a>
                </article>
            `;
     }

@@ -12,7 +12,7 @@ fetch(url)
     for (let i = 0; i < tags.length; i++) {
       categorias += `
         <article class="tagsArticles">
-          <a href="#" class="tag-a">${tags[i]}</a>
+          <a href="./category.html?q=${tags[i]}" class="tag-a">${tags[i]}</a>
         </article>
       `;
     }
@@ -22,4 +22,3 @@ fetch(url)
   .catch(function (error) {
     console.log("Error: ", error);
   });
-  
