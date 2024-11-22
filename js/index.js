@@ -30,7 +30,7 @@ fetch("https://dummyjson.com/recipes")
       let nuevasRecetas = "";
       let limite = cargarMas + 10;
 
-      if (limite < recetas.length) {
+      if (limite <= recetas.length) {
         for (let i = cargarMas; i < limite; i++) {
           nuevasRecetas += `
             <article class="articles-recetas">
