@@ -11,30 +11,36 @@ fetch(url)
     })
     .then(function (data) {
         let recetas = data.recipes;
-        console.log(data);
-
         let recetas_encontradas = "";
         let categoriaBuscada = document.querySelector(".categoriaBuscada");
 
-        for (let i = 0; i < recetas.length; i++) {
-            recetas_encontradas += `
-                <article class="recipeCategory">
-                    <div class="recipeCategoryDiv">
-                        <h2>Name: ${recetas[i].name} </h2>
-                        <h3>Difficulty: ${recetas[i].difficulty} </h3>
-                        <img src="${recetas[i].image}" class="imageRecetasCategory"> 
-                    </div>       
-                </article>
-      `;
+        if (recetas.length === 0) {
+            categoriaBuscada.innerHTML =
+                `
+                    <section class="tagsArticles">
+            
+                    </section>
+                `
+        } else {
+            for (let i = 0; i < recetas.length; i++) {
+                recetas_encontradas += `
+                    <article class="recipeCategory">
+                        <div class="recipeCategoryDiv">
+                            <h2>Name: ${recetas[i].name} </h2>
+                            <h3>Difficulty: ${recetas[i].difficulty} </h3>
+                            <img src="${recetas[i].image}" class="imageRecetasCategory"> 
+                        </div>       
+                    </article>
+                `;
+            }
+
+            categoriaBuscada.innerHTML = recetas_encontradas;
+            categoriaBuscada.style.display = "flex";
+            categoriaBuscada.style.flexWrap = "wrap";
+            categoriaBuscada.style.justifyContent = "center";
+            categoriaBuscada.style.alignItems = "center";
+            categoriaBuscada.style.padding = "20px";
         }
-
-        categoriaBuscada.innerHTML = recetas_encontradas;
-        categoriaBuscada.style.display = "flex";
-        categoriaBuscada.style.flexWrap = "wrap";
-        categoriaBuscada.style.justifyContent = "center";
-        categoriaBuscada.style.alignItems = "center";
-        categoriaBuscada.style.padding = "20px";
-
     })
     .catch(function (error) {
         console.log("Error: ", error);
