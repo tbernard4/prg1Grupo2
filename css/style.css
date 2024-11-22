@@ -1,15 +1,17 @@
-* ⁠{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+* ⁠ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
 
 }
+
 h1 h2 h3 h4 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
-body{
+
+body {
   font-family: "Lato", sans-serif;
   font-style: normal;
   background-image: url(https://image.freepik.com/foto-gratis/detalle-textura-tela-color-marron-claro-fondo_1373-1249.jpg);
@@ -17,30 +19,30 @@ body{
   height: 100%;
   margin: 0px;
 
-  
+
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFF3E0;
-    height: 100%;
-    width: 100%;
-   
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF3E0;
+  height: 100%;
+  width: 100%;
+
 }
 
-.navBar a{
-    text-decoration: none;
-    color: #ff5133;
-    border: 2px solid transparent;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 20px;
-    margin-bottom: 10px;
+.navBar a {
+  text-decoration: none;
+  color: #ff5133;
+  border: 2px solid transparent;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.navBarA:hover{
+.navBarA:hover {
   font-weight: bolder;
   border: solid 2px rgba(255, 60, 60, 0.2);
   background-color: rgba(255, 60, 60, 0.2);
@@ -50,13 +52,13 @@ body{
 
 }
 
-.logo{
+.logo {
   height: 90px;
   border-radius: 50%;
   margin: 15px;
 }
 
-footer{
+footer {
   font-family: "Playfair Display", serif;
   font-style: normal;
   text-align: center;
@@ -65,12 +67,13 @@ footer{
   background-color: #FFF3E0;
 }
 
-.navLi{
-    list-style-type: none;
-    margin: 0 60px;
+.navLi {
+  list-style-type: none;
+  margin: 0 60px;
 }
-.navUl{
-    display: flex;
+
+.navUl {
+  display: flex;
 
 }
 
@@ -78,25 +81,27 @@ footer{
   border-color: #FF4500;
   box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
 }
-.inputBuscador{
+
+.inputBuscador {
   border-radius: 8px;
-  border: solid 2px #ff5133;;
+  border: solid 2px #ff5133;
+  ;
   padding: 8px;
   width: 160px;
   margin-top: 10px;
-  
-}
-
-.search-button{
-    border: none; 
-    background: none;
-    border: 2px solid transparent;
-    padding: 5px;
-    border-radius: 10px;
 
 }
 
-.search-button:hover{
+.search-button {
+  border: none;
+  background: none;
+  border: 2px solid transparent;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+.search-button:hover {
   font-weight: bolder;
   border: solid 2px rgba(255, 60, 60, 0.2);
   background-color: rgba(255, 60, 60, 0.2);
@@ -105,7 +110,8 @@ footer{
   box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.2);
 
 }
-.hover-image{
+
+.hover-image {
   display: none;
   width: 30px;
 }
@@ -115,14 +121,15 @@ footer{
   display: block;
 }
 
-.nombre:hover{
+.nombre:hover {
   font-weight: bold;
 }
 
-.input{
+.input {
   max-width: 95%;
 }
-.nombres{
+
+.nombres {
   display: flex;
   justify-content: space-between;
   margin: 0 35%;
@@ -162,7 +169,9 @@ footer{
 }
 
 
-.iniciarSesion, .crearCuenta, .registrarse{
+.iniciarSesion,
+.crearCuenta,
+.registrarse {
   display: block;
   width: 100%;
   padding: 10px;
@@ -173,20 +182,22 @@ footer{
   text-align: center;
 }
 
-.iniciarSesion:hover, .crearCuenta:hover, .registrarse:hover {
+.iniciarSesion:hover,
+.crearCuenta:hover,
+.registrarse:hover {
   background-color: rgba(255, 60, 60, 0.735);
   font-weight: bolder;
 
 }
- 
- /* FETCH */
- .recipes-list{
-  border: 2px solid black;
+
+/* FETCH */
+.recipes-list {
+  border: none;
   margin-top: 30px;
 
- }
+}
 
- .articles-recetas {
+.articles-recetas {
   width: 40%;
   border: dotted;
   display: flex;
@@ -195,56 +206,58 @@ footer{
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
-  border-color:  rgba(255, 60, 60, 0);
- }
+  border-color: rgba(255, 60, 60, 0);
+}
 
- .articles-recetas img{
+.articles-recetas img {
   width: 80%;
   border-radius: 50%;
- }
+}
 
- .articles-recetas img:hover{
+.articles-recetas img:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
- }
+}
 
-.articles-recetas p{
+.articles-recetas p {
   font-size: 20px;
 }
-.bodyRegisterLogin{
+
+.bodyRegisterLogin {
   height: 100%;
   margin: 0;
 }
 
-.errorRegisterMail, .errorRegisterContraseña {
+.errorRegisterMail,
+.errorRegisterContraseña {
   display: none;
   color: red;
 }
 
-.noTengoCuenta{
+.noTengoCuenta {
   text-decoration: none;
   margin-top: 10px;
 }
 
-.noTengoCuenta:hover{
+.noTengoCuenta:hover {
   text-decoration: underline;
 }
 
-.cargarMasDiv{
+.cargarMasDiv {
   display: flex;
   justify-content: center;
 
 }
 
-.cargarMasBoton{
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background-color: #e07a5f;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 15px 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.cargarMasBoton {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #e07a5f;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .cargarMasBoton:hover {
@@ -252,29 +265,52 @@ footer{
   box-shadow: 0 8px 16px rgba(214, 90, 59, 0.8);
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
 
-  .articles-recetas{
-    width: 30%;
-  } 
-  .navBar{
-    width: 30%;
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 0px;
   }
-  .formBuscador{
+
+  .articles-recetas {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .formBuscador {
     display: none;
+
   }
 
-  .logo {
-    margin:0px ;
-    width: 0%;
-  }
-  .navUl{
-    width: 30%;
-  }
-  .header{
-    width: 30%;
+  .logo {}
+
+  .navUl {
+    margin: 0px;
+    margin-right: 40px;
   }
 
-  
- 
+  .navLi {
+    margin: 0px;
+  }
+
+  .recipie-detail {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 }
