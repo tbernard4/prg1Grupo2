@@ -340,6 +340,12 @@ footer {
   .noRecetas{
     display: block;
   }
+  .tagsArticles{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+  }
 
   /* ------------------------------ */
 
@@ -373,6 +379,17 @@ footer {
   margin-top: 0%;
   margin-top: 10%;
   }
+
+  .footer3{
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  text-align: center;
+  background-color: #FFF3E0;
+  margin-top: 0%;
+  margin-top: 30%;
+  }
+
+  
 @media (max-width: 1100px) {
 
   .header {
