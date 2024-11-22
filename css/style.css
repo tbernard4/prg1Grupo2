@@ -342,6 +342,37 @@ footer {
   }
 
   /* ------------------------------ */
+
+  .recipe-detail{
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recipe-detail h2{
+    text-align: center;
+  }
+
+  .recipe-detail img{
+  border-radius: 50%;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  width: 25%;
+  margin: 0%;
+  }
+  .recipe-detail p{
+    font-weight: bolder;
+    text-align: center;
+  }
+  .footer2{
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  text-align: center;
+  background-color: #FFF3E0;
+  margin-top: 0%;
+  margin-top: 10%;
+  }
 @media (max-width: 1100px) {
 
   .header {
