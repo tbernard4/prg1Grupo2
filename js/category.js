@@ -18,6 +18,7 @@ fetch(url)
             categoriaBuscada.innerHTML =
                 `
                     <section class="tagsArticles">
+                        <p> no hay recetas para esta categoria <p>
             
                     </section>
                 `
