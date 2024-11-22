@@ -277,6 +277,26 @@ footer {
   margin: 15px;
 }
 
+.categoriesSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.tagsArticles {
+  background-color: #d65a3b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tagsArticles .tag-a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
 
 @media (max-width: 500px) {
 
