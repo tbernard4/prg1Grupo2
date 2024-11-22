@@ -42,14 +42,17 @@
         </div>
     </header>
 
-    <form action="./index.html" method="get" class="formulario" id="formularioLogin">
+    <section class="loginform">
+        <form action="./index.html" method="get" class="formulario" id="formularioLogin">
+            <h2>¡Bienvenido de vuelta! Inicia sesión para continuar.</h2>
+            <img src="./images/logoTI.webp" class="logo2" alt="Logo">
+            <input placeholder="Mail" type="text" class="input" name="username" id="loginEmail"><br><br>
+            <input placeholder="Contraseña" type="password" class="input" name="password" id="loginPassword"><br><br>
 
-        <input placeholder="Mail" type="text" class="input" name="username" id="loginEmail"><br><br>
-        <input placeholder="Contraseña" type="password" class="input" name="password" id="loginPassword" ><br><br>
-
-        <button type="submit" class="iniciarSesion">Iniciar sesión</button>
-        <a class="noTengoCuenta" href="./register.html">No tengo cuenta*</a>
-    </form>
+            <button type="submit" class="iniciarSesion">Iniciar sesión</button>
+            <a class="noTengoCuenta" href="./register.html">No tengo cuenta*</a>
+        </form>
+    </section>
 
     <footer class="footer">
         <p class="nombres">
@@ -68,6 +71,7 @@
                 Agustin Rolon
             </span>
         </p>
+        <p> ® All rights reserved. Unauthorized use, reproduction, or distribution is strictly prohibited.</p>
     </footer>
 
 

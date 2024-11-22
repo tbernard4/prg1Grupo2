@@ -14,6 +14,7 @@ fetch("https://dummyjson.com/recipes")
     recipesList.style.flexWrap = "wrap"
     recipesList.style.justifyContent = "space-evenly"
 
+
     for (let i = 1; i <= 10; i++) {
       recipes += `
               <article class="articles-recetas">
@@ -26,6 +27,8 @@ fetch("https://dummyjson.com/recipes")
     }
     recipesList.innerHTML = recipes;
 
+    let verMas = document.querySelector(".verMasA")
+    verMas.style.textDecoration = "none";
 
     let cargarMasBoton = document.querySelector(".cargarMasBoton")
     let cargarMas = 10
