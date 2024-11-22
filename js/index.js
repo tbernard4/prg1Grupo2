@@ -27,8 +27,6 @@ fetch("https://dummyjson.com/recipes")
     }
     recipesList.innerHTML = recipes;
 
-    let verMas = document.querySelector(".verMasA")
-    verMas.style.textDecoration = "none";
 
     let cargarMasBoton = document.querySelector(".cargarMasBoton")
     let cargarMas = 10
@@ -41,6 +39,7 @@ fetch("https://dummyjson.com/recipes")
                                <img src= ${recetas[i].image} alt=''>
                                 <h2>Name: ${recetas[i].name} </h2>
                                 <p>Difficulty: ${recetas[i].difficulty} </p>
+                                <a href="./receta.html?id=${[i]}" class="verMasA">Ver mas</a>
                          </article>
                      `;
       }

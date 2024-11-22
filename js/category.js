@@ -18,11 +18,13 @@ fetch(url)
 
         for (let i = 0; i < recetas.length; i++) {
             recetas_encontradas += `
-        <article class="recipe">
-                    <h2>Name: ${recetas[i].name} </h2>
-                    <img src= ${recetas[i].image}>
-                    <p>Difficulty: ${recetas[i].difficulty} </p>
-        </article>
+                <article class="recipeCategory">
+                    <div class="recipeCategoryDiv">
+                        <h2>Name: ${recetas[i].name} </h2>
+                        <h3>Difficulty: ${recetas[i].difficulty} </h3>
+                        <img src="${recetas[i].image}" class="imageRecetasCategory"> 
+                    </div>       
+                </article>
       `;
         }
 
