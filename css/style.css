@@ -331,7 +331,17 @@ footer {
   font-size: 18px;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+  }
+
+  /* ------------------------------ */
+
+  /* completar para el oops por el error */
+
+  .noRecetas{
+    display: block;
+  }
+
+  /* ------------------------------ */
 @media (max-width: 1100px) {
 
   .header {
@@ -376,6 +386,18 @@ footer {
   }
   .recipe-detail img{
     width: 100%;
+    border-radius: 50%;
+  }
+  
+  .recipe-detail h2{
+    text-align: center;
+  }
+
+  .recipe-detail p{
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
   }
 
 
