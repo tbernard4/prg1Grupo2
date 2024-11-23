@@ -17,9 +17,8 @@ fetch(url)
         if (recetas.length === 0) {
             categoriaBuscada.innerHTML =
                 `
-                    <section class="tagsArticles">
-                        <p> no hay recetas para esta categoria <p>
-            
+                    <section class="imagen-no-recetas">
+                        <img src="./images/no-results.png" alt="Sin recetas" class="imagen-no-recetas">
                     </section>
                 `
         } else {

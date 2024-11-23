@@ -19,7 +19,12 @@ if (resultadoBuscador) {
             for (let i = 0; i < receta.length; i++) {
                 recetas_encontradas += `
             <article>
-                   <img src= ${receta[i].image} alt=''>
+                        <div class="recipeCategoryDiv">
+                            <h2>Name: ${receta[i].name} </h2>
+                            <h3>Difficulty: ${receta[i].difficulty} </h3>
+                            <img src="${receta[i].image}" class="imageRecetasCategory"> 
+                        </div>       
+                   
              </article>
          `;
             }
