@@ -44,7 +44,7 @@
     </header>
 
     <section class="loginform">
-    <form action="./index.html" method="get" class="formulario" id="formularioRegister">
+    <form action="./login.html" method="get" class="formulario" id="formularioRegister">
         <h2>Regístrate y comenza tu aventura.</h2>
         <img src="./images/logoTI.webp" class="logo2" alt="Logo">
         <input placeholder="Mail" type="text" class="input" name="username" id="registerMail"><br><br>
@@ -55,8 +55,16 @@
         <div class="errorRegisterContraseña">
             Por favor complete el campo*
 
+
         </div>
-        <button class="iniciarSesion" type="submit" class="iniciarSesion">Registrarme</button>
+
+        <div>
+            <label>
+                <input type="checkbox" class="terms"> Acepto los terminos y las condiciones
+            </label>
+
+        </div>
+        <button id="registerButton"  class="iniciarSesion" type="submit" class="iniciarSesion">Registrarme</button>
     </form>
 </section>
 

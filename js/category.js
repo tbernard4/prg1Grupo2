@@ -3,7 +3,7 @@ let queryStringObj = new URLSearchParams(queryString);
 
 let busqueda = queryStringObj.get("q");
 
-let url = `https://dummyjson.com/recipes/search?q=${busqueda}`;
+let url = `https://dummyjson.com/recipes/tag/${busqueda}`;
 
 fetch(url)
     .then(function (response) {
