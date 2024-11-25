@@ -18,7 +18,7 @@ fetch("https://dummyjson.com/recipes")
           <img src="${recetas[i].image}" alt="">
           <h2>Name: ${recetas[i].name}</h2>
           <p>Difficulty: ${recetas[i].difficulty}</p>
-          <a href="./receta.html?id=${i}" class="verMasA">Ver más</a>
+          <a href="./receta.html?id=${recetas[i].id}" class="verMasA">Ver más</a>
         </article>
       `;
     }
@@ -37,7 +37,7 @@ fetch("https://dummyjson.com/recipes")
               <img src="${recetas[i].image}" alt="">
               <h2>Name: ${recetas[i].name}</h2>
               <p>Difficulty: ${recetas[i].difficulty}</p>
-              <a href="./receta.html?id=${i}" class="verMasA">Ver más</a>
+              <a href="./receta.html?id=${recetas[i].id}" class="verMasA">Ver más</a>
             </article>
           `;
         }

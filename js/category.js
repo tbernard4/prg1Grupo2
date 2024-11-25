@@ -13,6 +13,7 @@ fetch(url)
         let recetas = data.recipes;
         let recetas_encontradas = "";
         let categoriaBuscada = document.querySelector(".categoriaBuscada");
+        let verMasA = document.querySelector(".verMasA");
 
         if (recetas.length === 0) {
             categoriaBuscada.innerHTML =
@@ -42,6 +43,7 @@ fetch(url)
             categoriaBuscada.style.justifyContent = "center";
             categoriaBuscada.style.alignItems = "center";
             categoriaBuscada.style.padding = "20px";
+            verMasA.style.margin = "20px";
         }
     })
     .catch(function (error) {
