@@ -12,7 +12,6 @@ fetch(url)
   .then(function (data) {
     let receta = null;
 
-    // Busca la receta con el ID correspondiente
     for (let i = 0; i < data.recipes.length; i++) {
       if (data.recipes[i].id == recetaId) {
         receta = data.recipes[i];
@@ -22,7 +21,6 @@ fetch(url)
 
     let recetaDetail = document.querySelector(".recipe-detail");
 
-    // Actualiza el contenido con la información de la receta
     recetaDetail.innerHTML = `
       <h2>Name: ${receta.name}</h2>
       <img src="${receta.image}">
