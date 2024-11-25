@@ -28,7 +28,9 @@ fetch(url)
                         <div class="recipeCategoryDiv">
                             <h2>Name: ${recetas[i].name} </h2>
                             <h3>Difficulty: ${recetas[i].difficulty} </h3>
-                            <img src="${recetas[i].image}" class="imageRecetasCategory"> 
+                            <img src="${recetas[i].image}" class="imageRecetasCategory">
+                            <a href="./receta.html?id=${recetas[i].id}" class="verMasA">Ver más</a>
+ 
                         </div>       
                     </article>
                 `;
