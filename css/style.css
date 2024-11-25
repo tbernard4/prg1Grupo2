@@ -342,6 +342,7 @@ footer {
   font-size: 18px;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
   }
 
   /* ------------------------------ */
@@ -361,8 +362,8 @@ footer {
   /* ------------------------------ */
 
   .recipe-detail{
-    display: flex
-;
+    display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
