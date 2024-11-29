@@ -466,3 +466,9 @@ footer {
 
 
 }
+.errorRegisterMail p{
+  margin-top: 0px;
+}
+.errorRegisterContraseña p{
+  margin-top: 0px;
+}

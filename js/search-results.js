@@ -35,5 +35,5 @@ if (resultadoBuscador) {
         });
 
 } else {
-    recetaBuscada.innerText = `no se encontro la busqueda`;
+    recetaBuscada.innerText = `ingrese su busqueda`;
 }
