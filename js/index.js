@@ -12,7 +12,9 @@ fetch("https://dummyjson.com/recipes")
     recipesList.style.flexWrap = "wrap";
     recipesList.style.justifyContent = "space-evenly";
 
-    for (let i = 0; i < 10; i++) {
+    let cargarMas = 10;
+
+    for (let i = 0; i < Math.min(10, recetas.length); i++) {
       recipes += `
         <article class="articles-recetas">
           <img src="${recetas[i].image}" alt="">
@@ -24,36 +26,29 @@ fetch("https://dummyjson.com/recipes")
     }
     recipesList.innerHTML = recipes;
 
-    let cargarMas = 10;
 
     cargarMasBoton.addEventListener("click", function () {
       let nuevasRecetas = "";
       let limite = cargarMas + 10;
 
-      if (limite <= recetas.length) {
-        for (let i = cargarMas; i < limite; i++) {
-          nuevasRecetas += `
-            <article class="articles-recetas">
-              <img src="${recetas[i].image}" alt="">
-              <h2>Name: ${recetas[i].name}</h2>
-              <p>Difficulty: ${recetas[i].difficulty}</p>
-              <a href="./receta.html?id=${recetas[i].id}" class="verMasA">Ver más</a>
-            </article>
-          `;
-        }
+      for (let i = cargarMas; i < Math.min(limite, recetas.length); i++) {
+        nuevasRecetas += `
+          <article class="articles-recetas">
+            <img src="${recetas[i].image}" alt="">
+            <h2>Name: ${recetas[i].name}</h2>
+            <p>Difficulty: ${recetas[i].difficulty}</p>
+            <a href="./receta.html?id=${recetas[i].id}" class="verMasA">Ver más</a>
+          </article>
+        `;
+      }
 
-        cargarMas += 10;
-        recipesList.innerHTML += nuevasRecetas;
+      recipesList.innerHTML += nuevasRecetas;
+      cargarMas += 10;
 
-      } else {
+      if (cargarMas >= recetas.length) {
         cargarMasBoton.style.display = "none";
       }
     });
-
-    if (recetas.length <= cargarMas) {
-      cargarMasBoton.style.display = "none";
-    }
-
   })
   .catch(function (error) {
     console.log("error: ", error);

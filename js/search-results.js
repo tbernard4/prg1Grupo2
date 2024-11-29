@@ -28,6 +28,8 @@ fetch(url)
             recetaBuscada.innerHTML = recetas_encontradas;
         } else {
             recetaBuscada.innerHTML = `<p>No se encontraron resultados para "${resultadoBuscador}".</p>`;
+            let footer = document.querySelector(".footer")
+            footer.style.marginTop = "100%";
         }
     })
     .catch(function (error) {

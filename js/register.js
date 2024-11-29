@@ -1,8 +1,8 @@
 let formulario = document.querySelector("#formularioRegister");
 let email = document.querySelector("#registerMail");
-let contrasena = document.querySelector("#registerContraseña");
+let contrasena = document.querySelector("#registerContrasena");
 let errorRegisterMail = document.querySelector(".errorRegisterMail");
-let errorRegisterContrasena = document.querySelector(".errorRegisterContraseña");
+let errorRegisterContrasena = document.querySelector(".errorRegisterContrasena");
 let terminosCondiciones = document.querySelector(".terms");
 
 email.addEventListener("input", function() {
@@ -11,7 +11,7 @@ email.addEventListener("input", function() {
     }
 });
 
-contraseña.addEventListener("input", function() {
+contrasena.addEventListener("input", function() {
     if (contrasena.value !== "") {
         errorRegisterContrasena.style.display = "none";
     }
