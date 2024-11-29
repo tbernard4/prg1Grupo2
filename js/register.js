@@ -38,14 +38,4 @@ formulario.addEventListener("submit", function (event) {
 });
 
 
-let checkbox = document.querySelector('.terms'); 
-let button = document.querySelector('#registerButton'); 
 
-button.addEventListener('click', function (event) {
-    if (!checkbox.checked) { 
-        event.preventDefault(); 
-        alert('Debes aceptar los términos y condiciones antes de enviar.');
-    } else {
-        alert('¡Formulario enviado con éxito!');
-    }
-});
