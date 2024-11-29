@@ -65,6 +65,7 @@ footer {
   padding: 10px;
   bottom: 0;
   background-color: #FFF3E0;
+  margin-top: 100%;
 }
 
 .navLi {
@@ -345,9 +346,7 @@ footer {
   margin-top: 20px;
   }
 
-  /* ------------------------------ */
 
-  /* completar para el oops por el error */
 
   .noRecetas{
     display: block;
@@ -359,7 +358,7 @@ footer {
     font-size: larger;
   }
 
-  /* ------------------------------ */
+
 
   .recipe-detail{
     display: flex;
