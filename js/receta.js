@@ -15,7 +15,7 @@ fetch(url)
     for (let i = 0; i < data.recipes.length; i++) {
       if (data.recipes[i].id == recetaId) {
         receta = data.recipes[i];
-        break;
+      
       }
     }
 

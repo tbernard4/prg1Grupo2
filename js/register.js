@@ -1,8 +1,8 @@
 let formulario = document.querySelector("#formularioRegister");
 let email = document.querySelector("#registerMail");
-let contraseña = document.querySelector("#registerContraseña");
+let contrasena = document.querySelector("#registerContraseña");
 let errorRegisterMail = document.querySelector(".errorRegisterMail");
-let errorRegisterContraseña = document.querySelector(".errorRegisterContraseña");
+let errorRegisterContrasena = document.querySelector(".errorRegisterContraseña");
 let terminosCondiciones = document.querySelector(".terms");
 
 email.addEventListener("input", function() {
@@ -12,8 +12,8 @@ email.addEventListener("input", function() {
 });
 
 contraseña.addEventListener("input", function() {
-    if (contraseña.value !== "") {
-        errorRegisterContraseña.style.display = "none";
+    if (contrasena.value !== "") {
+        errorRegisterContrasena.style.display = "none";
     }
 });
 
@@ -26,8 +26,8 @@ formulario.addEventListener("submit", function (event) {
         validado = false;
     }
 
-    if (contraseña.value == "") {
-        errorRegisterContraseña.style.display = "block";
+    if (contrasena.value == "") {
+        errorRegisterContrasena.style.display = "block";
         validado = false;
     }
 
